@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Manrope:wght@200..800&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Manrope', 'sans-serif';
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.header-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.header-conteiner .logo-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-conteiner .logo-area .nome-banco {
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+.header-conteiner .menu-area .menu-itens {
+    display: flex;
+    align-items: center;
+}
+
+.header-conteiner .menu-area .menu-itens li {
+    list-style: none;
+    margin-right: 35px;
+}
+
+.header-conteiner .menu-area .menu-itens a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header-conteiner .menu-area .menu-itens li:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5bc241;
+    font-weight: 300;
+    border-radius: 10px;
+    height: 39px;
+    width: 127px;
+    color: white;
+}
+
+.header-conteiner .menu-area .menu-itens li:nth-child(n+1):nth-child(-n+5) {
+    transition: background-color 0.4s ease, padding 0.4s ease, color 0.4s ease;
+}
+
+.header-conteiner .menu-area .menu-itens li:nth-child(n+1):nth-child(-n+5):hover {
+    background-color: #5bc241;
+    color: #fff;
+    width: 75px; 
+    padding: 10px 0; 
+    text-align: center;
+}
+
+@media (max-width: 820px) {
+    .header-conteiner {
+        flex-direction: column;
+    }
+
+    .header-conteiner .logo-area img {
+        width: 35px;
+    }
+    .header-conteiner .logo-area .nome-banco {
+        font-size: 30px;
+    }
+
+    .header-conteiner .menu-area .menu-itens {
+        flex-direction: column;   
+        margin-left: 50px;   
+        margin-top: 30px;  
+    }
+
+    .header-conteiner .menu-area .menu-itens li {
+        margin-bottom: 25px;
+    }
+
+    .header-conteiner .menu-area .menu-itens li:nth-child(n+1):nth-child(-n+5) {
+        font-size: 25px;
+    }
+
+    .header-conteiner .menu-area .menu-itens li:nth-child(n+1):nth-child(-n+5):hover {
+        width: 140px;
+    }
+
+    .header-conteiner .menu-area .menu-itens li:last-child {
+        height: 42px;
+        width: 100px;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+}
